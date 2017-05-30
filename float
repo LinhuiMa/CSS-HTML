@@ -1,0 +1,85 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+<meta charset="utf-8"></meta>  
+    <title>三栏布局</title> 
+    <style>
+
+    *{
+        padding: 20px;
+        margin: 0px;
+    }
+    .check-box{
+        background:#eee;
+        height:560px;
+        width: auto;
+        border:1px solid #999;
+    }
+    .left-box{
+        float: left;
+        height:auto;
+        width:200px;
+         border:1px solid #999;
+         background-color: white;
+    }
+    .ll{/*这里不能有float*/
+        width:80px; 
+        height:80px;
+         background:#eee;
+          border:1px solid #999;
+
+    }
+    .center-box{
+        margin-left:260px;
+        margin-right:200px;
+        height:auto;
+        width:auto;
+        background-color: white;
+        border:0;
+        border:1px solid #999;
+    } 
+    .right-box{
+        
+        /*这部分总和左边两栏不在一个水平线上，不知道怎么改*/
+        margin:20px;
+        width:120px;
+        min-height:auto;
+        background-color: white;
+       border:1px solid #999;
+    }
+    .rb1, .rb2, .rb3, .rb4 {
+        /*position: absolute;*/
+        margin-top: 10px;
+        width:80px;
+        height:80px;        
+        background:#eee;
+        border:1px solid #999;
+    }
+
+
+    </style>
+</head>
+<body>
+<div class="check-box">
+    <div class="left-box"><p style="float: right; padding-right: 10px">团队名称</p>
+        <div class="ll">团队logo
+        </div>
+    </div>
+    <div class="center-box">
+        <div>
+            <p>关于你们团队的介绍。</br>可以给我们解释一下团队名称的来历，或是分别介绍你们团队的成员</br>(以下为示例)</br>百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台</br>百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台</br>百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台</br>百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台
+        </div>
+    </div>
+   <div class="right-box">
+        <div class="rb1">个人介绍
+        </div>
+        <div class="rb2" >个人介绍
+        </div>
+        <div class="rb3" >个人介绍
+        </div>
+        <div class="rb4" >个人介绍
+        </div>
+    </div>
+</div>
+</body>
+</html>
