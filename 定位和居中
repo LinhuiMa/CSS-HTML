@@ -1,0 +1,47 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>定位和居中</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        #box{
+            background: #ccc;
+            width: 400px;
+            height: 200px;
+            margin: auto auto;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            position: absolute;
+        }
+        #circle1{
+            border-radius: 0px 0px 50px 0px;
+            width: 50px;
+            height: 50px;
+            background-color: #fc0;
+            left: 0px;
+            top:0px;
+        }
+        #circle2{
+            margin: auto 0 0 auto;
+            width: 50px;
+            height: 50px;
+            background-color: #fc0;
+            bottom: 0px;
+            right: 0px;
+            border-radius: 50px 0px 0px 0px;
+            position: absolute;/*首先父元素要定位position，且给出上下左右边距，此处才能用position将这个圆定位到右下角*/
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <div id="circle1"></div>   
+    <div id="circle2"></div>   
+</div>
+</body>
+</html>
